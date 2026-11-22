@@ -1,0 +1,270 @@
+/*-----HOME-----*/
+
+/*disposicion selector y barra de busqueda*/
+.buscadores{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    .buscadores{  
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        display: flex;
+        
+     margin-top: 50%;
+     margin-left: 75%;
+    
+    }
+     
+
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+  
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+
+}
+
+
+ /*color texto*/
+.categorias{
+    color: #50F0FA;
+}
+
+.selector{
+    color: #030227;
+    border: 0;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.input{
+    padding: 4px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    margin-left: 70vh;
+    color: black;
+}
+
+.button{
+   background-color: #50F0FA;
+   border: 0;
+   position: absolute;
+   padding: 4px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 0 5px 5px 0;
+   cursor: pointer;
+}
+
+ .subtitulo_ppal{
+    color: #FF4BCD;
+    margin-top: 70px;
+    margin-left: 58px;
+ }
+
+ .cards{
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 20px;
+    position:relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+ }
+
+ /*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    .cards{
+        border-radius: 10px;
+        min-height: 100px;
+        padding: 20px;
+        position:relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 50%;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        gap: 20px;
+     }
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .cards{
+        border-radius: 10px;
+        min-height: 100px;
+        padding: 20px;
+        position:relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 40%;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        gap: 20px;
+     }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+    .cards{
+        border-radius: 10px;
+        min-height: 200px;
+        padding: 20px;
+        position:relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+     }
+}
+
+
+ .cards a{
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+ .card-1 ,.card-2 ,.card-3 ,.card-4 ,.card-5 ,.card-6 ,.card-7 ,.card-8 ,.card-9 ,.card-10 ,.card-11 ,.card-12 ,.card-13 ,.card-14 ,.card-15 ,.card-16 ,.card-17 ,.card-18 ,.card-19 ,.card-20 ,.card-21 ,.card-22 ,.card-23 ,.card-24 {
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    min-height: 200px;
+    position:relative;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: inset 0px 0px 70px  #000000;
+
+    /*tiempo de transicion, y contraste para las cards*/
+    transition: all 300ms;
+    filter:contrast(1);
+ }
+ 
+/*aplicacion de efecto hover*/
+ .card-1:hover,.card-2:hover ,.card-3:hover ,.card-4:hover ,.card-5:hover ,.card-6:hover ,.card-7:hover,.card-8:hover,.card-9:hover ,.card-10:hover ,.card-11:hover,.card-12:hover ,.card-13:hover ,.card-14:hover ,.card-15:hover ,.card-16:hover ,.card-17:hover,.card-18:hover ,.card-19:hover ,.card-20:hover ,.card-21:hover ,.card-22:hover,.card-23:hover,.card-24:hover{
+    transform: scale(1.13);
+    filter:contrast(1.1);
+ }
+ .card-1-prueba  {
+    background-image:url(../assets/images/iron_man_3.jpg);  
+ }
+
+ .tipo_video{
+    padding-top: 100%;
+ }
+.carol{
+    font-size: 12px;
+    margin-top: 1.5%;
+}
+ .card-1  {
+    background-image:url(../assets/images/iron_man_3.jpg);  
+ }
+ .card-2  {
+    background-image:url(../assets/images/resident_evil.jpg);  
+ }
+ .card-3  {
+    background-image:url(../assets/images/bohemian_rhapsody.jpg);
+ }
+ .card-4  {
+    background-image:url(../assets/images/la_vieja_guardia.jpg); 
+ }
+ .card-5  {
+    background-image:url(../assets/images/carol-coll.jpg);
+ }
+ .card-6  {
+    background-image:url(../assets/images/project_power.jpg);   
+ }
+ .card-7  {
+    background-image:url(../assets/images/venom.jpg); 
+ }
+ .card-8  {
+    background-image:url(../assets/images/charmed.jpg);
+ }
+ .card-9  {
+    background-image:url(../assets/images/duro_de_matar_4.jpg);
+ }
+ .card-10  {
+    background-image:url(../assets/images/morbius.jpg);
+ }
+ .card-11  {
+    background-image:url(../assets/images/life.jpg);
+ }
+ .card-12  {
+    background-image:url(../assets/images/game-of-trones.jpg);
+ }
+ .card-13  {
+    background-image:url(../assets/images/wanda_vision.jpg);
+ }
+ .card-14{
+    background-image:url(../assets/images/el-reino-animal.jpg);
+ }
+ .card-15  {
+    background-image:url(../assets/images/thor_love_and_thunder.jpg);
+ }
+ .card-16  {
+    background-image:url(../assets/images/manifest.jpg); 
+ }
+ .card-17  {
+    background-image:url(../assets/images/abrazad_la_gloria.jpg);  
+ }
+ .card-18  {
+    background-image:url(../assets/images/spiderman_no_way_home.jpg);  
+ }
+ .card-19  {
+    background-image:url(../assets/images/avengers_infinity_war.jpg);  
+ }
+ .card-20  {
+    background-image:url(../assets/images/duro_de_matar.jpg);  
+ }
+ .card-21  {
+    background-image:url(../assets/images/sandman.jpg);
+ }
+ .card-22  {
+    background-image:url(../assets/images/batman.jpg);
+ }
+ .card-23  {
+    background-image:url(../assets/images/this-is-us.jpg);
+ }
+ .card-24  {
+    background-image:url(../assets/images/x-files.jpg);
+ }
+

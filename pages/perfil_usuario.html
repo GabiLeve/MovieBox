@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/perfil_usuario.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="icon" href="../assets/images/Icono-logo-rectangular.ico">
+</head>
+
+<body class="fondo_usuario">
+
+
+
+    <!-- ESTE EL EL HEADER CON EL NAVBAR DENTRO-->
+    <header class="header">
+        <a class="logo_nav" href="home.html"><img class="logo_nav"
+                src="../assets/images/logo.png" alt="Logo"></a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="peliculas.html">Peliculas</a>
+            <a href="perfil_usuario.html">Perfil</a>
+            <a href="../index.html" class="cerrar_sesion">
+                <button class="boton_cerrar_sesion"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="perfil_usuario">
+            <div class="fondo_foto">
+                <div class="foto_nombre">
+                    <img src="../assets/images/perfil.webp" alt="img_perfil">
+                </div>
+            </div>
+
+            <div>
+                <h3 class="nombre_usuario" id="mostrar_nombre"></h3> <!-- aca imprimir nombre-->
+            </div>
+
+            <div class="container_usuario">
+
+                <!-- ACA EMPIEZA EL FORMULARIO-->
+                <div class="formulario_campos">
+
+                    <div class="datos_personales">
+                        <label class="referencia_inputField" for="e-mail">E-mail</label>
+                        <input id="mail" type="email" name="correo" required value="ej.mostrar@e-mail.com" class="mail input_field">
+                        <br><br>
+                        <label class="referencia_inputField" for="contraseña">Contraseña</label>
+                        <input id="contraseña" type="password" name="pass" value="********" class="contraseña input_field">
+                        <br><br>
+                        <label class="referencia_inputField"  for="nueva">Nueva contraseña</label>
+                        <input id="nueva" type="password" name="nuevCont" placeholder="Nueva contraseña" class="nueva input_field">
+                        <br><br>
+                        <label class="referencia_inputField" for="repetir">Repetir contraseña</label>
+                        <input id="repetir" type="password" name="repCont" placeholder="Repetir contaseña" class="repetir input_field">
+
+                    </div>
+<!-- MEDIOS DE PAGO-->
+                    <div class="medios_pago">
+                        
+                        <h4 class="referencia_inputField">Método de pago</h4>
+                        <input  class="referencia_inputField" id="tarjeta" type="radio" name="medio_pago" value="tarjeta" checked class="tc input_field"> Tarjeta de crédito
+                        <br>
+                        <input id="numero_tarjeta" type="text" name="tarjeta" placeholder="Número de tarjeta" class="tarje_1 input_field">
+                        <input id="cod_tarjeta" type="text" name="tarjeta" placeholder="XXX" class="clave input_field">
+                        <br>
+                        <input class="referencia_inputField" id="cupon" type="radio" name="medio_pago" value="cupón" class="cupon"> Cupón de pago
+                            <div class="pago">
+                        <input id="facil" type="checkbox" name="a" value="facil" class="facil_pago">
+                        <label class="referencia_inputField" for="facil">Pago Fácil</label>
+                        <input id="rapi" type="checkbox" name="a" value="rapi"  class="rapi_pago">
+                        <label class="referencia_inputField" for="rapi">RapiPago</label>
+                            </div>
+                        
+                        <input  id="otro" type="radio" name="medio_pago" value="transferencia" class="transf referencia_inputField"> Transferencia bancária
+                        <br>
+                            <div class="cbu">
+                        <label class="referencia_inputField" for="cbu">CBU: 152548964378912354788</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <div class="guardar">
+                        <input disabled class="boton_perfil botonDeshabilitado" type="submit" value="Guardar cambios" id="guardar_cambios">
+                    </div>
+                    <div class="cancelar">
+                        <input class="boton_perfil" type="submit" value="Cancelar suscripción">
+                    </div>
+
+                </div>
+
+                <!-- ACA TERMINA EL FORMULARIO-->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article class="interaccion">
+        <a href="#" class="contactanos">Contactanos</a>
+        <ul class="redes_sociales">
+            <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
+            <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </article>
+        <p class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</p>
+    </footer> 
+    <script type="text/javascript" src="../scripts/perfil_usuario.js"></script>
+</body>
+
+</html>

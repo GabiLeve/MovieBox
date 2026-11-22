@@ -1,0 +1,49 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #030227;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.logo_nav {
+    height: 28px;
+    width: 28px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #50F0FA;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #50F0FA;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+.boton_cerrar_sesion{
+    color: #50F0FA;
+    background-color: #030227;
+    border: 0;
+    cursor: pointer;
+    }

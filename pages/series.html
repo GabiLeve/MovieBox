@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Pantalla principal</title>
+    <script src="https://kit.fontawesome.com/b408879b64.js"></script>
+    <link rel="icon" href="../assets/images/Icono-logo-rectangular.ico">
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo_nav" href="home.html"><img class="logo_nav" src="../assets/images/logo.png" alt="Logo"></a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="peliculas.html">Peliculas</a>
+            <a href="perfil_usuario.html">Perfil</a>
+            <a href="../index.html">
+                <button class="boton_cerrar_sesion"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="buscadores">
+
+            <div class="filtro">
+                <label for="categorías" class="categorias">Categorías</label>
+
+                <select class="selector" name="categorías" id="categorías">
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="1" selected>Comedia</option>
+                    <option value="2">Acción</option>
+                    <option value="3">Drama</option>
+                    <option value="4">Ciencia ficción</option>
+                    <option value="5">Fantasía</option>
+                    <option value="6">Aventura</option>
+                    <option value="7">Musicales</option>
+                    <option value="8">Suspenso</option>
+                    <option value="9">Terror</option>
+                    <option value="10">Animación</option>
+                    <option value="11">Documental</option>
+                    <option value="12">Historia</option>
+                    <option value="13">Guerra</option>
+                    <option value="14">Misterio</option>
+                    <option value="15">Familia</option>
+                    <option value="16">Western</option>
+            </div>
+            <div class="buscar">
+                <input class="input" placeholder="Buscar por nombre">
+                <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="subtitulo_ppal">Series</h2>
+            </article>
+
+            <div class="cards">
+
+                <a href="detalle_serie.html">
+                    <article class="card-5">
+                        <div class="textos">
+                            <h5> Carol y el fin del mundo</h5>
+                            <h6 class="tipo_video"> Serie </h6>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="detalle_serie.html">
+                    <article class="card-8">
+                        <div class="textos">
+                            <h5>Charmed</h5>
+                            <h6 class="tipo_video"> Serie </h6>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="detalle_serie.html">
+                <article class="card-12">
+                    <div class="textos">
+                        <h5>Game of thrones</h5>
+                        <h6 class="tipo_video"> Serie </h6>
+                    </div>
+                </article>
+                </a>
+
+                <a href="detalle_serie.html">
+                    <article class="card-16">
+                        <div class="textos">
+                            <h5>Manifest</h5>
+                            <h6 class="tipo_video"> Serie </h6>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="detalle_serie.html">
+                    <article class="card-21">
+                        <div class="textos">
+                            <h5>The sandman</h5>
+                            <h6 class="tipo_video"> Serie </h6>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="detalle_serie.html">
+                    <article class="card-23">
+                        <div class="textos">
+                            <h5>This is us</h5>
+                <h6 class="tipo_video"> Serie</h6>
+            </div>
+            </article>
+            </a>
+            <a href="detalle_serie.html">
+                <article class="card-24">
+                    <div class="textos">
+                        <h5>The x files</h5>
+                        <h6 class="tipo_video"> Serie </h6>
+                    </div>
+                </article>
+            </a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <article class="interaccion">
+            <a href="#" class="contactanos">Contactanos</a>
+            <ul class="redes_sociales">
+                <li class="icono_red"><i class="fa-brands fa-facebook"></i></li>
+                <li class="icono_red"><i class="fa-brands fa-twitter"></i></li>
+                <li class="icono_red"><i class="fa-brands fa-instagram"></i></li>
+                <li class="icono_red"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </article>
+        <h6 class="copyright">&copy; 2024 CartucheraCode | Todos los derechos reservados</h6>
+    </footer>
+</body>
+
+</html>
