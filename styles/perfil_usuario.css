@@ -1,0 +1,321 @@
+/*-----PERFIL DE USUARIO-----*/
+/*
+/* centra formulario*/
+.perfil_usuario{
+    display: grid;
+    place-content: center; 
+}
+
+/*Disposición y color nombre usuario*/
+.nombre_usuario{
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    color: #50F0FA;
+}
+
+/*estilo y ubicacion formulario*/
+.container_usuario{
+    border: 5px solid #030227;
+    padding: 20px;
+    width: 785px;
+    margin-top: 20px;
+    border-radius: 25px; 
+   /* background: rgb(3,2,39);
+    background: linear-gradient(0deg, #030227f2 5%, #ff4bcdc2 100%);   */
+}
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    .container_usuario{
+        border: 5px solid #030227;
+        padding: 20px;
+        width: 320px;
+        margin-top: 20px;
+        border-radius: 25px; 
+        background: rgb(3,2,39);
+        background: linear-gradient(0deg, #030227f2 5%, #ff4bcdc2 100%);   
+    }
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .container_usuario{
+        border: 5px solid #030227;
+        padding: 20px;
+        width: 400px;
+        margin-top: 20px;
+        border-radius: 25px; 
+        background: rgb(3,2,39);
+        background: linear-gradient(0deg, #030227f2 5%, #ff4bcdc2 100%);   
+    }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+    .container_usuario{
+        border: 5px solid #030227;
+        padding: 20px;
+        width: 785px;
+        margin-top: 20px;
+        border-radius: 25px; 
+        background: rgb(3,2,39);
+        background: linear-gradient(0deg, #030227f2 5%, #ff4bcdc2 100%);   
+    }
+}
+
+
+/*estilos perfil de usuario
+
+
+
+/*foto perfil, psosicion, tamaño y decorado*/
+.fondo_foto {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border: 6px solid #030227;
+    background-color: #030227;
+    border-radius: 50%;
+    bottom: -90px;
+    left: calc(50% - 90px);  
+}
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+  .fondo_foto {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border: 6px solid #030227;
+    background-color: #030227;
+    border-radius: 50%;
+    bottom: -90px;
+    margin-top: 120px;
+    left: calc(50% - 90px);  
+}
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .fondo_foto {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        border: 6px solid #030227;
+        background-color: #030227;
+        border-radius: 50%;
+        bottom: -90px;
+        margin-top: 60px;
+        left: calc(50% - 90px);  
+    }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+    .fondo_foto {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        border: 6px solid #030227;
+        background-color: #030227;
+        border-radius: 50%;
+        bottom: -90px;
+        left: calc(50% - 90px);  
+    }
+}
+
+
+/* distrubucion de formulario perfil de usuario*/
+.formulario_campos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    font-size: 14px; 
+}
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    .formulario_campos{
+        display: grid;
+        grid-template-columns:100%;
+        padding: 20px;
+        font-size: 14px; 
+        
+    }
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .formulario_campos{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 20px;
+        font-size: 14px; 
+    }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+    .formulario_campos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px;
+        font-size: 14px; 
+    }
+}
+
+
+.botones{
+    /*pone en una fila y separa*/
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px; 
+}
+
+/*borde formulario*/
+.container_usuario {
+    border: 5px solid #030227;
+}
+
+/*posicion imagen*/
+.foto_nombre img{
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+.boton_perfil{
+    padding: 10px;
+}
+/**/
+/**/
+/*AJUSTES DE MARGENES FORMULARIO perfil de usuario*/
+/*--------------------------------------------*/
+.mail{
+    margin-left: 28%;
+    margin-bottom: 2%;
+}
+.contraseña{
+    margin-left: 18%;
+    margin-bottom: 2%;
+}
+.nueva{
+    margin-left: 6%;
+    margin-bottom: 2%;
+}
+.repetir{
+    margin-left: 5%;
+}
+.clave{
+    width: 10%;
+}
+.tc{
+    margin-top: 10px; 
+}
+.tarje_1{
+    margin-left: 10%;
+    margin-top: 5px;
+}
+.cupon{
+    margin-top: 5px;
+}
+.pago{
+    margin-top: 5px;
+}
+.facil_pago{
+    margin-left: 10%;
+}
+.rapi_pago{
+    margin-left: 7%;
+}
+.transf{
+    margin-top: 5px;
+}
+.cbu{
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    #cod_tarjeta{
+        width: 20%;
+    }
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .mail{
+        margin-left: 8%;
+        margin-bottom: 2%;
+    }
+    .contraseña{
+        margin-left: 8%;
+        margin-bottom: 2%;
+    }
+    .nueva{
+        width: 50%;
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+    .repetir{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .clave{
+        width: 10%;
+    }
+    .tc{
+        margin-top: 10px; 
+    }
+    .tarje_1{
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+    .cupon{
+        margin-top: 5px;
+    }
+    .pago{
+        margin-top: 5px;
+    }
+    .facil_pago{
+        margin-left: 10%;
+    }
+    .rapi_pago{
+        margin-left: 7%;
+    }
+    .transf{
+        margin-top: 5px;
+    }
+    .cbu{
+        margin-top: 5px;
+        margin-left: 10%;
+    }
+    #cod_tarjeta{
+        width: 20%;
+    }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+
+}
+
+.boton_perfil{
+    content: "";
+    background-image: linear-gradient(150deg,#ff4bcdc2 , #39359c,#50F0FA);
+    background-size: 300%;
+    border:none;
+    border-radius: 17px;
+    color:#030227;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    transition: all 0.6s ease;
+    width:80px;   
+}
+.boton_perfil button:hover{
+    background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
+    background-position: 100%;
+}
+

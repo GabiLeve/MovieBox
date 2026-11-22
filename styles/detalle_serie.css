@@ -1,0 +1,269 @@
+/*-----DETALLE SERIE-----*/
+
+/* menu de detalle de serie */
+.menu_detalle_serie{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EFEDDC;
+    background-image: url(../assets/images/fondo_thrones.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+     /*capa de oscurecimiento*/
+     background-color: rgb(70, 70, 70);
+     background-blend-mode: soft-light;
+}
+
+/* contenedor de los detalles de la serie */
+.detalle_serie{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* titulo de la serie */
+.titulo_serie{
+    font-size: 60px;
+    margin-bottom: 4%;
+}
+
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    .titulo_serie{
+        font-size: 30px;
+        margin-top: 50%;
+    }
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .titulo_serie{
+        font-size: 50px;
+        margin-top: 30%;
+        margin-bottom: 4%;
+    }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+    .titulo_serie{
+        font-size: 60px;
+        margin-bottom: 4%;
+    }
+}
+
+.select_temporada, .select_capitulo{
+    border: solid  #030227;
+    border-radius: 5px;
+    color: #030227;
+    cursor: pointer;
+}
+
+.select_temporada:hover, .select_capitulo:hover{
+    border: solid  #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #030227;
+}
+
+/* expecificaciones del genero y duracion de la pelicula  */
+.detalle_de_serie{
+    font-size: 15px;
+    margin-bottom: 4%;
+}
+
+.sinopsis_serie{
+    font-size: 20px; 
+    margin-top: 4%;
+}
+
+.similares{
+    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.series_similares{
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 20px;
+    position:relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+
+    /*tiempo de transicion, y contraste para las cards*/
+    transition: all 300ms;
+    filter:contrast(1);
+}
+
+/*diseño para pantallas pequeñas*/
+@media screen and (max-width: 400px){
+    .series_similares{
+        border-radius: 10px;
+        min-height: 100px;
+        padding: 20px;
+        height: 40%;
+        margin-top: 10px;
+        display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    }
+}
+
+/*diseño para pantallas medianas*/ 
+@media screen and (min-width: 400px) and (max-width: 1024px){
+    .series_similares{
+        border-radius: 10px;
+        min-height: 200px;
+        padding: 20px;
+        position:relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/*diseño para pantallas grandes*/ 
+@media (min-width: 1025px) {
+    .series_similares{
+        border-radius: 10px;
+        min-height: 200px;
+        padding: 20px;
+        position:relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        margin-top: 10px;
+
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/*Aplica hover a las cards*/
+.serie1:hover, .serie2:hover, .serie3:hover, .serie4:hover {
+   transform: scale(1.13);
+   filter:contrast(1.1);
+}
+
+/* todos los a que contenga peliculas similares se modifica */
+.series_similares a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.serie1, .serie2, .serie3, .serie4 {
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    min-height: 200px;
+    position:relative;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: inset 0px 0px 70px  #000000;
+}
+
+.serie1{
+    background-image: url(../assets/images/manifest.jpg);
+}
+
+.serie2{
+    background-image: url(../assets/images/this-is-us.jpg);
+}
+
+.serie3{
+    background-image: url(../assets/images/charmed.jpg);
+}
+
+.serie4{
+    background-image: url(../assets/images/carol-coll.jpg);
+}
+
+.botones_de_serie{
+    color: #EFEDDC;
+}
+
+/*Estilo de botones de anterior y siguiente */
+#anterior {
+    content: "";
+    padding: 2%;
+    border:solid;
+    border-radius: 5px;
+   padding: 2%;
+    margin: 5px;
+    color:#030227;
+    background-image: linear-gradient(150deg,#ff4bcdc2 , #39359c,#50F0FA);
+    background-size: 300%;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+#anterior:hover {
+    background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
+    background-position: 100%; 
+}
+
+.anterior{
+    margin: 5px;
+    padding: 2px;
+}
+
+.botonesSeries {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#siguiente {
+    content: "";
+    padding: 2%;
+    border:solid;
+    border-radius: 5px;
+   padding: 2%;
+    margin: 5px;
+    color:#030227;
+    background-image: linear-gradient(150deg,#ff4bcdc2 , #39359c,#50F0FA);
+    background-size: 300%;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content:end;
+
+}
+
+#siguiente:hover {
+    background-image: linear-gradient(150deg,#ff4bcdc2,#50F0FA, #39359c);
+    background-position: 100%; 
+}
+
+
+.siguiente{
+    margin: 5px;
+    padding: 2px;
+}  
